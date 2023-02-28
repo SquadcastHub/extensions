@@ -1,0 +1,116 @@
+{
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+	"version": "1.6.0",
+	"manifestVersion": "1.12",
+	"id": "14c5435a-691e-42d2-935b-7b5a5ebec4ce",
+	"packageName": "com.package.name",
+	"name": { "short": "Squadcast-EU", "full": "Squadcast App" },
+	"developer": {
+		"name": "Squadcast",
+		"mpnId": "6485348",
+		"websiteUrl": "https://squadcast.com",
+		"privacyUrl": "https://squadcast.com/privacy",
+		"termsOfUseUrl": "https://squadcast.com/terms"
+	},
+	"description": {
+		"short": "Effective Incident Management directly from Microsoft Teams.",
+		"full": "Squadcast users can now View, Acknowledge, Re-assign & Resolve incidents quickly without leaving Microsoft Teams. Integration setup and authentication can be completed effortlessly, allowing users to quickly integrate Squadcast and Microsoft Teams in their incident resolution workflows. It also let's you see who is on-call at any given moment and collaborate on the incident. A Squadcast account is required to complete integration. For questions or help with orders, please contact support@squadcast.com."
+	},
+	"icons": { "outline": "outline.png", "color": "color.png" },
+	"accentColor": "#ffffff",
+	"staticTabs": [
+		{ "entityId": "conversations", "scopes": ["personal"] },
+		{ "entityId": "about", "scopes": ["personal"] }
+	],
+	"bots": [
+		{
+			"botId": "8326bfd3-3fb7-4c3a-8d18-181a46b3a537",
+			"scopes": ["personal", "groupchat", "team"],
+			"commandLists": [
+				{
+					"commands": [
+						{
+							"title": "whos on call",
+							"description": "to know who is on-call for your organisation"
+						},
+						{
+							"title": "link account",
+							"description": "to link a squadcast account with Microsoft Teams"
+						},
+						{ "title": "help", "description": "to get the help message" },
+						{
+							"title": "unlink account",
+							"description": "to unlink all Squadcast organisations linked with your Microsoft Teams tenant"
+						}
+					],
+					"scopes": ["personal"]
+				},
+				{
+					"commands": [
+						{
+							"title": "whos on call",
+							"description": "to know who is on-call for your organisation"
+						},
+						{
+							"title": "link account",
+							"description": "to link a squadcast account with Microsoft Teams"
+						},
+						{ "title": "help", "description": "to get the help message" },
+						{
+							"title": "unlink account",
+							"description": "to unlink all Squadcast organisations linked with your Microsoft Teams tenant"
+						}
+					],
+					"scopes": ["team"]
+				},
+				{
+					"commands": [
+						{
+							"title": "whos on call",
+							"description": "to know who is on-call for your organisation"
+						},
+						{
+							"title": "link account",
+							"description": "to link a squadcast account with Microsoft Teams"
+						},
+						{ "title": "help", "description": "to get the help message" },
+						{
+							"title": "unlink account",
+							"description": "to unlink all Squadcast organisations linked with your Microsoft Teams tenant"
+						}
+					],
+					"scopes": ["groupchat"]
+				}
+			],
+			"isNotificationOnly": false,
+			"supportsCalling": false,
+			"supportsVideo": false,
+			"supportsFiles": true
+		}
+	],
+	"validDomains": [],
+	"webApplicationInfo": {
+		"id": "4c500aaa-b9f9-4349-b7bf-cf4dbfec4f71",
+		"resource": ""
+	},
+	"devicePermissions": [
+		"notifications",
+		"geolocation",
+		"openExternal",
+		"media",
+		"midi"
+	],
+	"authorization": {
+		"permissions": {
+			"orgWide": [],
+			"resourceSpecific": [
+				{ "name": "ChannelMessage.Read.Group", "type": "Application" },
+				{ "name": "Channel.Create.Group", "type": "Application" },
+				{ "name": "TeamsActivity.Send.Chat", "type": "Application" },
+				{ "name": "ChatMessage.Read.Chat", "type": "Application" },
+				{ "name": "ChatMember.Read.Chat", "type": "Application" },
+				{ "name": "Chat.Manage.Chat", "type": "Application" }
+			]
+		}
+	}
+}
