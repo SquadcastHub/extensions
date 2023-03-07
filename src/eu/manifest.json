@@ -1,10 +1,10 @@
 {
-	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
-	"version": "1.6.0",
-	"manifestVersion": "1.12",
-	"id": "14c5435a-691e-42d2-935b-7b5a5ebec4ce",
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+	"version": "1.8.2",
+	"manifestVersion": "1.11",
+	"id": "4a3debc3-a62a-4baa-b853-09b085a3375f",
 	"packageName": "com.package.name",
-	"name": { "short": "Squadcast-EU", "full": "Squadcast App" },
+	"name": { "short": "Squadcast EU", "full": "Squadcast EU App" },
 	"developer": {
 		"name": "Squadcast",
 		"mpnId": "6485348",
@@ -14,7 +14,7 @@
 	},
 	"description": {
 		"short": "Effective Incident Management directly from Microsoft Teams.",
-		"full": "Squadcast users can now View, Acknowledge, Re-assign & Resolve incidents quickly without leaving Microsoft Teams. Integration setup and authentication can be completed effortlessly, allowing users to quickly integrate Squadcast and Microsoft Teams in their incident resolution workflows. It also let's you see who is on-call at any given moment and collaborate on the incident. A Squadcast account is required to complete integration. For questions or help with orders, please contact support@squadcast.com."
+		"full": "Squadcast users can now View, Acknowledge, Re-assign & Resolve incidents quickly without leaving Microsoft Teams. Integration setup and authentication can be completed effortlessly, allowing users to quickly integrate Squadcast and Microsoft Teams in their incident resolution workflows. It also let's you see who is on-call at any given moment and collaborate on the incident. A Squadcast account is required to complete integration. For questions or help with orders, please contact support@squadcast.com.\n\nThis app will only work in our EU data centres for more information contact support at support@squadcast.com."
 	},
 	"icons": { "outline": "outline.png", "color": "color.png" },
 	"accentColor": "#ffffff",
@@ -79,7 +79,7 @@
 							"description": "to unlink all Squadcast organisations linked with your Microsoft Teams tenant"
 						}
 					],
-					"scopes": ["groupchat"]
+					"scopes": ["groupChat"]
 				}
 			],
 			"isNotificationOnly": false,
@@ -91,7 +91,7 @@
 	"validDomains": [],
 	"webApplicationInfo": {
 		"id": "4c500aaa-b9f9-4349-b7bf-cf4dbfec4f71",
-		"resource": ""
+		"resource": "https://notapplicable"
 	},
 	"devicePermissions": [
 		"notifications",
@@ -99,18 +99,5 @@
 		"openExternal",
 		"media",
 		"midi"
-	],
-	"authorization": {
-		"permissions": {
-			"orgWide": [],
-			"resourceSpecific": [
-				{ "name": "ChannelMessage.Read.Group", "type": "Application" },
-				{ "name": "Channel.Create.Group", "type": "Application" },
-				{ "name": "TeamsActivity.Send.Chat", "type": "Application" },
-				{ "name": "ChatMessage.Read.Chat", "type": "Application" },
-				{ "name": "ChatMember.Read.Chat", "type": "Application" },
-				{ "name": "Chat.Manage.Chat", "type": "Application" }
-			]
-		}
-	}
+	]
 }
