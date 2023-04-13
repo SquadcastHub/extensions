@@ -85,7 +85,7 @@
 			"isNotificationOnly": false,
 			"supportsCalling": false,
 			"supportsVideo": false,
-			"supportsFiles": true
+			"supportsFiles": false
 		}
 	],
 	"validDomains": [],
